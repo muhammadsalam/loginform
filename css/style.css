@@ -1,0 +1,103 @@
+@font-face{
+    font-family: 'prl';
+    font-weight: 300;
+    src: url(../fonts/ProximaNova-Light.ttf);
+}
+@font-face{
+    font-family: 'prsb';
+    font-weight: 600;
+    src: url(../fonts/ProximaNova-Semibold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: all .2s ease;
+}
+body{
+    font-family: 'prl';
+    color: #999898;
+    font-size: 18px;
+
+}
+.form-block{
+    margin: 0 auto;
+    background-color: #121317;
+    padding: 61px 33px 70px;
+    max-width: 470px;
+}
+.form{
+    margin-bottom: 36px;
+}
+.form-block-title{
+    font-size: 48px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 67px;
+}
+.form-block-title:after{
+    content: url("../img/icon.png");
+    display: inline-block;
+    padding: 32px 27px;
+    background-color: #df4a32;
+    font-size: 0;
+}
+.form__input{
+    border: 0;
+    border-top: 1px solid #212227;
+    width: 100%;
+    box-sizing: border-box;
+    background: url(../img/user-icon.png) no-repeat;
+    background-color: #18191e;
+    display: block;
+    padding: 32px 65px 29px 23px;
+    background-position: calc(100% - 26px) center;
+    color: #979696;
+    font-size: 24px;
+    border-bottom: 1px solid #0e0f12;
+}
+.form__input[type=password]{
+    background-image: url(../img/setting-icon.png);
+}
+.form__input:focus{
+    outline: 1px solid #df4a32;
+}
+.form__input::placeholder{
+    color: #979696;
+}
+.form__input + .form__input{
+    margin-top: 27px;
+}
+.form__submit{
+    border: 0;
+    border-top: 1px solid #e3c289;
+    padding: 31px 0 32px;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'prsb';
+    text-transform: uppercase;
+    background-color: #d29d41;
+    color: #6c411b;
+    margin-top: 29px;
+    cursor: pointer;
+}
+.form__submit:hover,
+.form__submit:focus,
+.form__submit:active{
+    outline: 0;
+    background-color: #d29d41e1;
+    border-color: #d29d41e1;
+}
+.f_btn{
+    color: #979696;
+    font-family: 'prsb';
+    margin-right: 20px;
+    text-decoration: none;
+}
+.c_btn{
+    color: #d29d41;
+    font-family: 'prsb';
+    text-decoration: none;
+}
